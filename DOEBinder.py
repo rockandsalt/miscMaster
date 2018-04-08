@@ -1,14 +1,7 @@
 import pyDOE as doe
 import numpy as np
 import pandas as pd
-
-def createSeries(listOfIndex,listOfVal):
-    newArray = []
-    for index in listOfIndex:
-        newArray.append(listOfVal[int(index)])
-
-    return pd.Series(newArray,index=range(0,len(newArray)))
-
+from helperFunction.Func import createSeries
 
 if __name__ == "__main__":
     layerThickness = range(150,225,25)

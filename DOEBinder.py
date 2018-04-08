@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(d)
 
-    writer = pd.ExcelWriter('BinderJet.xlsx')
+    writer = pd.ExcelWriter('./bin/BinderJet.xlsx')
     df.to_excel(writer,'Sheet1')
     writer.save()
     print(df)

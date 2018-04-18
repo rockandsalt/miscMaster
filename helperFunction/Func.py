@@ -11,6 +11,11 @@ def createSeries(listOfIndex,listOfVal):
 
     return pd.Series(newArray,index=range(0,len(newArray)))
 
+def SubValue(listOfIndex,listOfVal):
+    newArray = []
+    for index in listOfIndex:
+        newArray.append(listOfVal[int(index)])
+    return newArray
 
 def generateFrac(numOfFac,BoundingBox):
     RandomGeneratedList = pyDOE.ff2n(numOfFac)
